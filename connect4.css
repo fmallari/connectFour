@@ -1,9 +1,11 @@
 /* game board table */
 
 #board td {
-  width: 50px;
-  height: 50px;
+  width: 90px;
+  height: 90px;
   border: solid 1px #666;
+  position: relative;
+
 }
 
 /* pieces are div within game table cells: draw as colored circles */
@@ -17,10 +19,12 @@
 
 .piece.p1 {
   background-color: red;
+  border: 0.2em solid rgb(160, 36, 36);
 }
 
 .piece.p2 {
   background-color: blue;
+  border: 0.2em solid rgb(27, 27, 142)
 }
 
 /* column-top is table row of clickable areas for each column */

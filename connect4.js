@@ -16,7 +16,7 @@ let board = []; // array of rows, each row is array of cells  (board[y][x])
  */
 
 function makeBoard() {
-  // TODO: set "board" to empty HEIGHT x WIDTH matrix array
+  // Create JS board = array of rows 
   for (let y = 0; y < HEIGHT; y++) {
     board.push(Array.from({ length: WIDTH }));
   }
@@ -25,7 +25,7 @@ function makeBoard() {
 /** makeHtmlBoard: make HTML table and row of column tops. */
 
 function makeHtmlBoard(){
-  // TODO: get "htmlBoard" variable from the item in HTML w/ID of "board"
+  // Create "htmlBoard" variable from the item in HTML w/ID of "board"
   const htmlBoard = document.getElementById('board'); 
   
   // create top of column and allow for clickable area when adding piece
