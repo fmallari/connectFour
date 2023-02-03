@@ -28,7 +28,7 @@ function makeHtmlBoard(){
   // Create "htmlBoard" variable from the item in HTML w/ID of "board"
   const htmlBoard = document.getElementById('board'); 
   
-  // create top of column and allow for clickable area when adding piece
+  // Create top of column and allow for clickable area when adding piece
   const top = document.createElement("tr");
   top.setAttribute("id", "column-top");
   top.addEventListener("click", handleClick);
@@ -95,7 +95,7 @@ function handleClick(evt) {
   }
 
   // place piece in board and add to HTML table
-  // TODO: add line to update in-memory board
+  // Update in-memory board
   board[y][x] = currPlayer;
   placeInTable(y, x);
 
@@ -105,7 +105,7 @@ function handleClick(evt) {
   }
 
   // check for tie
-  // TODO: check if all cells in board are filled; if so call, call endGame
+  // Check if all cells in board are filled; if so call, call endGame
   if (board.every(row => row.every(cell => cell))) {
     return endGame('Tie!');
   }
