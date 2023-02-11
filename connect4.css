@@ -12,9 +12,9 @@
 /* pieces are div within game table cells: draw as colored circles */
 
 .piece {
-  width: 85%;
-  height: 85%;
-  border-radius: 2rem;
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
   position: relative;
 }
 

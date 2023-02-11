@@ -25,6 +25,7 @@ function makeBoard() {
 /** makeHtmlBoard: make HTML table and row of column tops. */
 
 function makeHtmlBoard(){
+
   // Create "htmlBoard" variable from the item in HTML w/ID of "board"
   const htmlBoard = document.getElementById('board'); 
   
